@@ -9,28 +9,91 @@
 
     <body>
         <ul>
-            <li><a href = "http://kubsu.ru">1 Гиперссылка на кубгу</a></li>
-            <li><a href = "https://kubsu.ru">2 Гиперссылка на кубгу</a></li>
-            <li><a href = "https://kubsu.ru">3 <img src = "1.jpg" width="250" height="200" title = "Гиперссылка на кубгу" id = "0"></a></li>
-            <li><a href = "/about">4 Внутренняя страница </a></li>
-            <li><a href = "/">5 Главная страница </a></li>
-            <li><a href = "#0">6 Картинка </a></li>
-            <li><a href = "https://kubsu.ru?par=1&stol=stul&one=two">7 Ссылка с тремя параметрами </a></li>
-            <li><a href = "https://kubsu.ru?id=0">8 Ссылка с id </a></li>
-            <li><a href = "about">9 Относительная на стр. в текущем каталоге</a></li>
-            <li><a href = "about/more">10 Относительная на стр. в about</a></li>
-            <li>13 В этом тексте присутствует <a href = "https://kubsu.ru">ссылка</a> на сайт КубГу. Она открывает сайт КубГу.</li>
-            <li><a href = "https://ru.wikipedia.org/wiki/AaaaaAAaaaAAAaaAAAAaAAAAA!!!_%E2%80%94_A_Reckless_Disregard_for_Gravity#:~:text=%5B6%5D.-,%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D0%B8%D0%B3%D1%80%D1%8B,-%5B%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%7C"> 14 Фрагмент страницы стороннего сайта</a></li>
+            <li>
+                <a href = "http://kubsu.ru">1 Гиперссылка на кубгу</a>
+            </li>
+            <li>
+                <a href = "https://kubsu.ru">2 Гиперссылка на кубгу</a>
+            </li>
+            <li>
+                <a href = "https://kubsu.ru">3 <img src = "1.jpg" width="300" height="300" title = "Гиперссылка на кубгу" id = "0"></a>
+            </li>
+            <li>
+                <a href = "/about">4 Внутренняя страница </a>
+            </li>
+            <li>
+                <a href = "/">5 Главная страница </a>
+            </li>
+            <li>
+                <a href = "#0">6 Картинка </a>
+            </li>
+            <li>
+                <a href = "https://kubsu.ru?par=1&stol=stul&one=two">7 Ссылка с тремя параметрами </a>
+            </li>
+            <li>
+                <a href = "https://kubsu.ru?id=0">8 Ссылка с id </a>
+            </li>
+            <li>
+                <a href = "about">9 Относительная на стр. в текущем каталоге</a>
+            </li>
+            <li>
+                <a href = "about/more">10 Относительная на стр. в about</a>
+            </li>
+            <li>
+                <a href = "../page">11 Относительная на стр уровнем выше</a>
+            </li>
+            <li>
+                <a href = "../../page">12 Относительная на стр двумя уровнями выше</a>
+            </li>
+            <li>
+                <span>13 В этом тексте присутствует </span>
+                <a href = "https://kubsu.ru">ссылка</a> на сайт КубГу. Она открывает сайт КубГу.
+            </li>
+            <li>
+                <a href = "https://www.kubsu.ru/index.php#:~:text=%D0%92%D1%81%D0%B5%20%D1%82%D0%B5%D0%BC%D1%8B%20%D0%BC%D0%B5%D1%81%D1%8F%D1%86%D0%B0-,%D0%9E%20%D0%B2%D0%B0%D0%B6%D0%BD%D0%BE%D0%BC,-2%20567%20%D1%81%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"> 14 Фрагмент страницы стороннего сайта</a>
+            </li>
             <li>
                 <map name="primary">
                     
-                    <area shape="rect" coords="0,0,125,200" href="https://kubsu.ru" alt = "картинка" title = "прямоугольная область" >
-                    <area shape="circle" coords="200,100,50" href="https://www.kubsu.ru/ru/abiturient/campaign2023" alt = "картинка" title = "круглая область" >
+                    <area shape="rect" coords="0,0,125,300" href="https://kubsu.ru" alt = "картинка" title = "прямоугольная область" >
+                    <area shape="circle" coords="230,100,70" href="https://www.kubsu.ru/ru/abiturient/campaign2023" alt = "картинка" title = "круглая область" >
                 </map>
-                    <a>15 Прямоугольная область (слева) и круглая (справа)</a>
+                    <span>15 Прямоугольная область (слева) и круглая (справа)</span>
                     <br>
-                    <img usemap="#primary" src="1.jpg" width="250" height="200" alt = "текст">
+                    <img usemap="#primary" src="1.jpg" width="300" height="300" alt = "текст">
             </li>
+            <li>
+                <a href = "">16 Пустой href</a>
+            </li>
+            <li>
+                <a>17 ссылка без href</a>
+            </li>
+            <li>
+				<a href="http://kubsu.ru/" rel="nofollow">18 Ссылка, по которой запрещен переход поисковикам</a>
+			</li>
+            <li>
+                <meta name="robots"content="noindex">
+                <a href="http://kubsu.ru/" content="noindex">19 Ссылка запрещенная ссылка для индексации поисковиками</a>
+            </meta>
+			</li>
+            <li>
+                <span> 20 Нумерованный список ссылок с подписями title </span>
+                <ol>
+                    <li>
+                        <a href = "https://yandex.com" title = "Yandex"> Яндекс </a>
+                    </li>
+                    <li>
+                        <a href = "https://google.com" title = "Google"> Гугл </a>
+                    </li>
+                    <li>
+                        <a href = "https://youtube.com" title = "Youtube"> Ютуб </a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="ftp://user:pass@server.com:1111/about/about.html;type=i">21 Ссылка на файл на сервере FTP с авторизацией</a>
+            </li>
+
         </ul>
     </body>
 </html>
