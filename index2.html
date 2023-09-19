@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Задание 2</title>
+    </head>
+   
+    <body>
+        <header>
+            <img src="logo.png" id = "logo" alt="logo pic"></img>
+            <nav id="nav-menu">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </nav>
+            <h1 id="zag">Заголовок</h1>
+        </header>
+
+        <div id = "main">
+
+            <span>Нумерованный список ссылок с подписями title </span>
+
+            <ol>
+                <li>
+                    <a href = "https://yandex.com" title = "Yandex"> Яндекс </a>
+                </li>
+                <li>
+                    <a href = "https://google.com" title = "Google"> Гугл </a>
+                </li>
+                <li>
+                    <a href = "https://youtube.com" title = "Youtube"> Ютуб </a>
+                </li>
+            </ol>
+    
+            <form action="/" method="POST">
+                <label>
+                    Однострочное текстовое поле:<br>
+                    <input name="field-fio"
+                        placeholder="Фамилия Имя Отчество">
+                </label>
+                <br>
+                <label>
+                    Ваш телефон:<br>
+                    <input name="field-tel"
+                        type="tel"
+                        placeholder="+79123123123">
+                </label>
+                <br>
+                <label>
+                    Ваш email:<br>
+                    <input name="field-email"
+                        type="email"
+                        placeholder="user@gmail.com">
+                </label>
+                <br>
+                <label>
+                    Дата рождения:<br>
+                    <input name="field-date"
+                        type="date"
+                        value="2077-09-22">
+                </label>
+                <br>
+                Пол:
+                <br>
+                    <label>
+                        <input type="radio" checked="checked" name="radio" value="Значение1">
+                        Мужской
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="radio" value="Значение2">
+                        Женский
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="radio" value="Значение3">
+                        Не знаю
+                    </label>
+                <br>
+                <label>
+                    Любимый язык программирования:
+                    <br>
+                    <select name="field-multiple"
+                        multiple="multiple">
+                        <option value="Значение1">Pascal </option>
+                        <option value="Значение2">C </option>
+                        <option value="Значение3">C++ </option>
+                        <option value="Значение4">JavaScript </option>
+                        <option value="Значение5">PHP </option>
+                        <option value="Значение6">Python </option>
+                        <option value="Значение4">Java </option>
+                        <option value="Значение5">Haskel </option>
+                        <option value="Значение6">Clojure </option>
+                        <option value="Значение5">Prolog </option>
+                        <option value="Значение6">Scala </option>
+                    </select>
+                </label>
+                <br>
+                <label>
+                    Биография:<br>
+                    <textarea name="field-bio">...</textarea>
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox"
+                    name="check-1">
+                    с контрактом ознакомлен (а) 
+                </label>
+                <br>
+                <input type="submit" value="Сохранить">
+            </form>
+        </div>
+
+    </body>
+</html>
