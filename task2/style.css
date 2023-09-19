@@ -3,6 +3,7 @@ header
     background-color:#1d1d1d;
     height: 80px;
     padding: 10px;
+    width: 100%;
 }
 
 body
@@ -14,6 +15,14 @@ body
     margin:0;
 }
 
+footer
+{
+    width: 100%;
+    height: 30px;
+    color:#c0c0c0;
+    text-align: center;
+}
+
 #logo
 {
     float: left;
@@ -21,8 +30,11 @@ body
 
 #nav-menu
 {
-    font-size: medium;
-    padding-top: 8px;
+    font-size: x-large;
+    text-align: center;
+    max-width: 960px;
+    height: 20px;
+    margin:0 auto;
 }
 
 #page-title
@@ -40,12 +52,6 @@ body
     padding:10px;
 }
 
-span.group-name
-{
-    font-size: larger;
-    font-variant: small-caps;
-}
-
 #list
 {
     margin:0;
@@ -58,7 +64,16 @@ span.group-name
 
 #table
 {
+    width: 400px;
+    height: 300px;
     padding-left: 25px;
+    text-align: center;
+}
+
+span.group-name
+{
+    font-size: larger;
+    font-variant: small-caps;
 }
 
 tr.chet
@@ -70,7 +85,6 @@ tr.nechet
 {
     background-color: #84aad8;
 }
-
 
 a:link 
 {
