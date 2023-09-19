@@ -105,3 +105,25 @@ a:active
 {
     color:#73bbff;
 }
+
+input.field
+{
+    background-color:#edf5ff;
+    height: 25px;
+    color:#1d1d1d;
+    border: none;
+}
+input::selection
+{
+    background-color:#84aad8;
+}
+
+select
+{
+    background-color:#edf5ff;
+}
+
+textarea
+{
+    background-color:#edf5ff;
+}
