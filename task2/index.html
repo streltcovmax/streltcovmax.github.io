@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Задание 2</title>
+    </head>
+   
+    <body>
+        <header>
+            <a href="#">
+                <img src="logo.png" id = "logo" alt="logo pic" width="80" height="80">
+            </a>
+            <nav id="nav-menu">
+                <a href="#list">Link 1</a>
+                <a href="#table">Link 2</a>
+                <a href="#form">Link 3</a>
+            </nav>
+            <span id="page-title">Заголовок</span>
+        </header>
+
+        <div id = "main">
+            <span class = "group-name">Список ссылок</span>
+
+            <ol id = "list">
+                <li>
+                    <a href = "https://yandex.com" title = "Yandex"> Яндекс </a>
+                </li>
+                <li>
+                    <a href = "https://google.com" title = "Google"> Гугл </a>
+                </li>
+                <li>
+                    <a href = "https://youtube.com" title = "Youtube"> Ютуб </a>
+                </li>
+            </ol>
+
+            <br>
+
+            <span class = "group-name"> Таблица</span>
+            <table id="table">
+                <tr>
+                    <th> Uno </th>
+                    <th> Dos </th>
+                    <th> Tres </th>
+                    <th> Cuatro </th>
+                </tr>
+
+                <tr class="chet">
+                    <td> Cell1 </td>
+                    <td> Cell2 </td>
+                    <td> Cell3 </td>
+                    <td> Cell4 </td>
+                </tr>
+
+                <tr class="nechet">
+                    <td colspan ="2"> Cell1 </td>
+                    <td colspan ="2"> Cell3 </td>
+                </tr>
+
+                <tr class="chet">
+                    <td> Cell1 </td>
+                    <td> Cell2 </td>
+                    <td> Cell3 </td>
+                    <td> Cell4 </td>
+                </tr>
+
+                <tr class="nechet">
+                    <td> Cell1 </td>
+                    <td> Cell2 </td>
+                    <td> Cell3 </td>
+                    <td> Cell4 </td>
+                </tr>
+
+                <tr class="chet">
+                    <td> Cell1 </td>
+                    <td colspan="2"> Cell2 </td>
+                    <td> Cell4 </td>
+                </tr>
+                
+                <tr class="nechet">
+                    <td> Cell1 </td>
+                    <td> Cell2 </td>
+                    <td> Cell3 </td>
+                    <td> Cell4 </td>
+                </tr>
+            </table>
+
+            <br>
+
+            <span class = "group-name">Форма</span>
+
+            <form action="#" method="POST" id = "form">
+                <label>
+                    Ваше фио:<br>
+                    <input name="field-fio"
+                        placeholder="Фамилия Имя Отчество">
+                </label>
+                <br>  <br>
+                <label>
+                    Ваш телефон:<br>
+                    <input name="field-tel"
+                        type="tel"
+                        placeholder="+79123123123">
+                </label>
+                <br>  <br>
+                <label>
+                    Ваш email:<br>
+                    <input name="field-email"
+                        type="email"
+                        placeholder="user@gmail.com">
+                </label>
+                <br>  <br>
+                <label>
+                    Дата рождения:<br>
+                    <input name="field-date"
+                        type="date"
+                        value="2077-09-22">
+                </label>
+                <br>  <br>
+                Пол:
+                <br>
+                    <label>
+                        <input type="radio" checked="checked" name="radio" value="Значение1">
+                        Мужской
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="radio" value="Значение2">
+                        Женский
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="radio" value="Значение3">
+                        Не знаю
+                    </label>
+                <br>  <br>
+                <label>
+                    Любимый язык программирования:
+                    <br>
+                    <select name="field-multiple"
+                        multiple="multiple">
+                        <option value="Значение1">Pascal </option>
+                        <option value="Значение2">C </option>
+                        <option value="Значение3">C++ </option>
+                        <option value="Значение4">JavaScript </option>
+                        <option value="Значение5">PHP </option>
+                        <option value="Значение6">Python </option>
+                        <option value="Значение4">Java </option>
+                        <option value="Значение5">Haskel </option>
+                        <option value="Значение6">Clojure </option>
+                        <option value="Значение5">Prolog </option>
+                        <option value="Значение6">Scala </option>
+                    </select>
+                </label>
+                <br> <br>
+                <label>
+                    Биография:<br>
+                    <textarea name="field-bio">...</textarea>
+                </label>
+                <br> <br>
+                <label>
+                    <input type="checkbox"
+                    name="check-1">
+                    с контрактом ознакомлен (а) 
+                </label>
+                <br>
+                <input type="submit" value="Сохранить">
+            </form>
+
+        </div>
+
+    </body>
+</html>
