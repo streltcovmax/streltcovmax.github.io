@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Задание 4</title>
+    </head>
+   
+    
+    <body>
+
+        <header class = "header-content mb-3">
+            <div class = "container mx-auto">
+                <div class = "row">
+                    <div class="logo-nameSite d-flex align-items-center">
+                        <img src="logo.png" id = "logo" alt="logo pic" class="logo p-2">
+                        
+                        <p id="page-title">Название этого сайта</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3  mt-3">
+                    <nav>
+                        <a href="#list">List</a>
+                        <a href="#table">Table</a>
+                        <a href="#form">Form</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
+        <div class = "content">
+            <div class="container mx-auto col-12 col-sm-10">
+                
+                  
+                    <div class = "container" id = "table">
+                        <table>
+                            <tr>
+                                <th> Uno </th>
+                                <th> Dos </th>
+                                <th> Tres </th>
+                                <th> Cuatro </th>
+                            </tr>
+
+                            <tr class="chet">
+                                <td> Cell1 </td>
+                                <td> Cell2 </td>
+                                <td> Cell3 </td>
+                                <td> Cell4 </td>
+                            </tr>
+
+                            <tr class="nechet">
+                                <td colspan ="2"> Cell1 </td>
+                                <td colspan ="2"> Cell3 </td>
+                            </tr>
+
+                            <tr class="chet">
+                                <td> Cell1 </td>
+                                <td> Cell2 </td>
+                                <td> Cell3 </td>
+                                <td> Cell4 </td>
+                            </tr>
+
+                            <tr class="nechet">
+                                <td> Cell1 </td>
+                                <td> Cell2 </td>
+                                <td> Cell3 </td>
+                                <td> Cell4 </td>
+                            </tr>
+
+                            <tr class="chet">
+                                <td> Cell1 </td>
+                                <td colspan="2"> Cell2 </td>
+                                <td> Cell4 </td>
+                            </tr>
+                            
+                            <tr class="nechet">
+                                <td> Cell1 </td>
+                                <td> Cell2 </td>
+                                <td> Cell3 </td>
+                                <td> Cell4 </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <ul class = "container p-4" id = "list">
+                        <li>
+                            <a href = "http://kubsu.ru">Гиперссылка на кубгу</a>
+                        </li>
+                        <li>
+                            <a href = "https://kubsu.ru">Гиперссылка на кубгу</a>
+                        </li>
+                        <li>
+                            <a href = "https://kubsu.ru"><img src = "1.jpg" width="300" height="300" title = "Гиперссылка на кубгу" id = "0"></a>
+                        </li>
+                        <li>
+                            <a href = "/about">Внутренняя страница </a>
+                        </li>
+                        <li>
+                            <a href = "/">Главная страница </a>
+                        </li>
+                        <li>
+                            <a href = "#0">Картинка </a>
+                        </li>
+                        <li>
+                            <a href = "https://kubsu.ru?par=1&stol=stul&one=two">Ссылка с тремя параметрами </a>
+                        </li>
+                        <li>
+                            <a href = "https://kubsu.ru?id=0">Ссылка с id </a>
+                        </li>
+                        <li>
+                            <a href = "about">Относительная на стр. в текущем каталоге</a>
+                        </li>
+                        <li>
+                            <a href = "about/more">Относительная на стр. в about</a>
+                        </li>
+                        <li>
+                            <a href = "../page">Относительная на стр уровнем выше</a>
+                        </li>
+                        <li>
+                            <a href = "../../page">Относительная на стр двумя уровнями выше</a>
+                        </li>
+                        <li>
+                            <span>В этом тексте присутствует </span>
+                            <a href = "https://kubsu.ru">ссылка</a> на сайт КубГу. Она открывает сайт КубГу.
+                        </li>
+                        <li>
+                            <a href = "https://www.kubsu.ru/index.php#:~:text=%D0%92%D1%81%D0%B5%20%D1%82%D0%B5%D0%BC%D1%8B%20%D0%BC%D0%B5%D1%81%D1%8F%D1%86%D0%B0-,%D0%9E%20%D0%B2%D0%B0%D0%B6%D0%BD%D0%BE%D0%BC,-2%20567%20%D1%81%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"> 
+                                Фрагмент страницы стороннего сайта</a>
+                        </li>
+                        <li>
+                            <map name="primary">
+                                
+                                <area shape="rect" coords="0,0,125,300" href="https://kubsu.ru" alt = "картинка" title = "прямоугольная область" >
+                                <area shape="circle" coords="230,100,70" href="https://www.kubsu.ru/ru/abiturient/campaign2023" alt = "картинка" title = "круглая область" >
+                            </map>
+                                <span>Прямоугольная область (слева) и круглая (справа)</span>
+                                <br>
+                                <img usemap="#primary" src="1.jpg" width="300" height="300" alt = "текст">
+                        </li>
+                        <li>
+                            <a href = "">Пустой href</a>
+                        </li>
+                        <li>
+                            <a>Ссылка без href</a>
+                        </li>
+                        <li>
+                            <a href="http://kubsu.ru/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a>
+                        </li>
+                        <li>
+                            <!--noindex-->
+                                <a href="http://kubsu.ru/">Ссылка запрещенная ссылка для индексации поисковиками</a>
+                            <!--/noindex-->
+                        </li>
+                        <li>
+                            <span>Нумерованный список ссылок с подписями title </span>
+                            <ol>
+                                <li>
+                                    <a href = "https://yandex.com" title = "Yandex"> Яндекс </a>
+                                </li>
+                                <li>
+                                    <a href = "https://google.com" title = "Google"> Гугл </a>
+                                </li>
+                                <li>
+                                    <a href = "https://youtube.com" title = "Youtube"> Ютуб </a>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <a href="ftp://user:pass@server.com/about/about.html"> Ссылка на файл на сервере FTP с авторизацией</a>
+                        </li>
+                    </ul>
+
+                    <div class = "container" id = "form">
+                        <form action="#">
+
+                            <label >
+                                Ваше фио:<br>
+                                <input name="field-fio" placeholder="Фамилия Имя Отчество" class = "field">
+                            </label>
+                            <label>
+                                Ваш телефон:<br>
+                                <input name="field-tel" type="tel" placeholder="+79123123123" class = "field">
+                            </label>
+                            
+                            <label>
+                                Ваш email:<br>
+                                <input name="field-email" type="email" placeholder="user@gmail.com" class = "field">
+                            </label>
+                            
+                            <label>
+                                Дата рождения:<br>
+                                <input name = "field-date" type="date" value="2077-09-22"  class = "field">
+                            </label>
+                            
+                            Пол:
+                            <br>
+                                <label>
+                                    <input type="radio" checked="checked" name="radio" value="Значение1">
+                                    Мужской
+                                </label>
+                                
+                                <label>
+                                    <input type="radio" name="radio" value="Значение2">
+                                    Женский
+                                </label>
+                            
+                                <label>
+                                    <input type="radio" name="radio" value="Значение3">
+                                    Не знаю
+                                </label>
+                            
+                            <label>
+                                Любимый язык программирования:
+                                <br>
+                                <select name="field-multiple"
+                                    multiple="multiple">
+                                    <option value="Значение1">Pascal </option>
+                                    <option value="Значение2">C </option>
+                                    <option value="Значение3">C++ </option>
+                                    <option value="Значение4">JavaScript </option>
+                                    <option value="Значение5">PHP </option>
+                                    <option value="Значение6">Python </option>
+                                    <option value="Значение4">Java </option>
+                                    <option value="Значение5">Haskel </option>
+                                    <option value="Значение6">Clojure </option>
+                                    <option value="Значение5">Prolog </option>
+                                    <option value="Значение6">Scala </option>
+                                </select>
+                            </label>
+                            
+                            <label>
+                                Биография:<br>
+                                <textarea name="field-bio">...</textarea>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox"
+                                name="check-1">
+                                с контрактом ознакомлен (а) 
+                            </label>
+                            
+                            <input type="submit" value="Сохранить">
+                        </form>
+                    </div>
+            </div>
+        </div>
+
+        
+        <footer>
+            <div class="container p-2">
+                <p class="text-center"> by Max Streltcov</p>
+            </div>
+           
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+
+    </body>
+</html>
