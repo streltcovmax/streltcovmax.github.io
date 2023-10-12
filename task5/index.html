@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Задание 5</title>
+  </head>
+
+  <body>
+    <div class="flex-box">
+      <div class="price-content">
+        <h2 align="center">Ассортимент</h5>
+        <div class="flex-box-content price-table">
+            <table >
+                <tbody>
+                <tr>
+                    <td class="product-text" align="center">Товар</td>
+                    <td class="price-text" align="center">Цена</td>
+                </tr>
+                <tr>
+                    <td>Круассан</td>
+                    <td>100 руб</td>
+                </tr>
+                <tr>
+                    <td>Булка с маком</td>
+                    <td>50 руб</td>
+                </tr>
+                <tr>
+                    <td> Венский конвертик </td>
+                    <td>129 руб</td>
+                </tr>
+                <tr>
+                    <td> Абрикос, 1кг </td>
+                    <td>49 руб</td>
+                </tr>
+                <tr>
+                    <td> Персик, 1кг </td>
+                    <td>69 руб</td>
+                </tr>
+                <tr>
+                    <td>
+                        Кофе вкусный
+                    </td>
+                    <td>115 руб</td>
+                </tr>
+                <tr>
+                    <td>
+                        Кофе обычный
+                    </td>
+                    <td>100 руб</td>
+                </tr>
+                <tr>
+                    <td>
+                        Вода, 1л
+                    </td>
+                    <td>70 руб</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pay-product flex-box-content">
+            <label>Выберите товар:</label>
+            <select id="selection" name="selection">
+                <option value="Товар1">Круассан</option>
+                <option value="Товар2">Булка с маком</option>
+                <option value="Товар3">Венский конвертик</option>
+                <option value="Товар4">Абрикос, 1кг</option>
+                <option value="Товар5">Персик, 1кг</option>
+                <option value="Товар6">Кофе вкусный</option>
+                <option value="Товар7">Кофе обычный</option>
+                <option value="Товар8">Вода, 1л</option>
+            </select>
+            <label>Количество товара:</label>
+            <input id="amount" type="text" name="amount" placeholder="Введите количество товара">
+            <button onclick="calculatePrice()">Рассчитать стоимость</button>
+            <div align="center" id="result" name="result">ИТОГО: </div>
+        </div>
+      </div>
+    </div>
+    <script src="calc.js"></script>
+  </body>
+</html>

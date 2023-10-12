@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+  }
+  .flex-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex-box-content {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  .pay-product {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+  }
