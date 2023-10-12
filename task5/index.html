@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Задание 5</title>
   </head>
@@ -10,13 +10,13 @@
   <body>
     <div class="flex-box">
       <div class="price-content">
-        <h2 align="center">Ассортимент</h5>
+        <h2 class="center">Ассортимент</h2>
         <div class="flex-box-content price-table">
-            <table >
+            <table>
                 <tbody>
                 <tr>
-                    <td class="product-text" align="center">Товар</td>
-                    <td class="price-text" align="center">Цена</td>
+                    <td class="product-text center">Товар</td>
+                    <td class="price-text center">Цена</td>
                 </tr>
                 <tr>
                     <td>Круассан</td>
@@ -61,7 +61,7 @@
         </div>
         <div class="pay-product flex-box-content">
             <label>Выберите товар:</label>
-            <select id="selection" name="selection">
+            <select id="selection">
                 <option value="Товар1">Круассан</option>
                 <option value="Товар2">Булка с маком</option>
                 <option value="Товар3">Венский конвертик</option>
@@ -72,9 +72,9 @@
                 <option value="Товар8">Вода, 1л</option>
             </select>
             <label>Количество товара:</label>
-            <input id="amount" type="text" name="amount" placeholder="Введите количество товара">
+            <input id="amount" type="text" placeholder="Введите количество товара">
             <button onclick="calculatePrice()">Рассчитать стоимость</button>
-            <div align="center" id="result" name="result">ИТОГО: </div>
+            <div class="center" id="result">ИТОГО: </div>
         </div>
       </div>
     </div>
