@@ -4,75 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Задание 5</title>
+    <title>Задание 6</title>
   </head>
 
   <body>
     <div class="flex-box">
       <div class="price-content">
-        <h2 class="center">Ассортимент</h2>
-        <div class="flex-box-content price-table">
-            <table>
-                <tbody>
-                <tr>
-                    <td class="product-text center">Товар</td>
-                    <td class="price-text center">Цена</td>
-                </tr>
-                <tr>
-                    <td>Круассан</td>
-                    <td>100 руб</td>
-                </tr>
-                <tr>
-                    <td>Булка с маком</td>
-                    <td>50 руб</td>
-                </tr>
-                <tr>
-                    <td> Венский конвертик </td>
-                    <td>129 руб</td>
-                </tr>
-                <tr>
-                    <td> Абрикос, 1кг </td>
-                    <td>49 руб</td>
-                </tr>
-                <tr>
-                    <td> Персик, 1кг </td>
-                    <td>69 руб</td>
-                </tr>
-                <tr>
-                    <td>
-                        Кофе вкусный
-                    </td>
-                    <td>115 руб</td>
-                </tr>
-                <tr>
-                    <td>
-                        Кофе обычный
-                    </td>
-                    <td>100 руб</td>
-                </tr>
-                <tr>
-                    <td>
-                        Вода, 1л
-                    </td>
-                    <td>70 руб</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
         <div class="pay-product flex-box-content">
-            <label>Выберите товар:</label>
-            <select id="selection">
-                <option value="Товар1">Круассан</option>
-                <option value="Товар2">Булка с маком</option>
-                <option value="Товар3">Венский конвертик</option>
-                <option value="Товар4">Абрикос, 1кг</option>
-                <option value="Товар5">Персик, 1кг</option>
-                <option value="Товар6">Кофе вкусный</option>
-                <option value="Товар7">Кофе обычный</option>
-                <option value="Товар8">Вода, 1л</option>
+            
+            Выберите товар:
+            <label>
+                <input type="radio" checked="checked" name="radio" value="Товар1" id = "prod1">
+                Круассан
+            </label>
+            
+            <label>
+                <input type="radio" name="radio" value="Товар2" id = "prod2"> 
+                Кофе
+            </label>
+        
+            <label>
+                <input type="radio" name="radio" value="Товар3" id = "prod3">
+                Вода
+            </label>
+            
+            <select id="selection" class = "invisible">
+                <option value="Опция1">Обычный</option>
+                <option value="Опция2">Вкусный</option>
             </select>
-            <label>Количество товара:</label>
+
+            <label id="option" class = "invisible">
+                <input type="checkbox" id="check">
+                в бутылке
+            </label>
+
+
+            <label>Количество товара: </label>
             <input id="amount" type="text" placeholder="Введите количество товара">
+           
             <button onclick="calculatePrice()">Рассчитать стоимость</button>
             <div class="center" id="result">ИТОГО: </div>
         </div>
