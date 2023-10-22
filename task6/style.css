@@ -8,6 +8,7 @@
   align-items: center;
 }
 .flex-box-content {
+  width: 350px;
   padding-left: 5vw;
   padding-right: 5vw;
   padding-top: 2vh;
@@ -21,4 +22,14 @@
 .center
 {
   text-align: center;
+}
+
+.visible
+{
+  display: flex;
+}
+
+.invisible
+{
+  display: none;
 }
