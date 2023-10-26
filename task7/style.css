@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.flex-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-box-content {
+  width: 350px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+.pay-product {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.center
+{
+  text-align: center;
+}
+
+.visible
+{
+  display: flex;
+}
+
+.invisible
+{
+  display: none;
+}
