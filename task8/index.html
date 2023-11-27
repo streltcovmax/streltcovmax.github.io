@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Задание 8</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
-
+  
   <body>
-
     <button data-modal-target="#modal" id="showForm">Открыть форму</button>
 
     <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Форма обратной связи</div>
+        <button data-close-button class="close-button">Назад</button>
+      </div>
       <form
         class="modal-body formcarryForm"
         id="myForm"
@@ -31,10 +34,10 @@
           autocomplete="off"
         />
 
-        <label for="phone">телефон:</label>
+        <label for="phone">Телефон:</label>
         <input type="tel" id="phone" name="phone" autocomplete="off" />
 
-        <label for="organization">организация:</label>
+        <label for="organization">Организация:</label>
         <input
           type="text"
           id="organization"
@@ -42,7 +45,7 @@
           autocomplete="off"
         />
 
-        <label for="message">сообщение:</label>
+        <label for="message">Сообщение:</label>
         <textarea
           id="message"
           class="text-area"
@@ -50,17 +53,21 @@
           required
           autocomplete="off"
         ></textarea>
-        <div>
-          <label for="agree">согласие с политикой обработки персональных данных:</label>
+        <div class="">
+          <label for="agree"
+            >Согласие с политикой обработки персональных данных:</label
+          >
           <input type="checkbox" id="agree" name="agree" required />
         </div>
 
         <button type="submit" id="submitForm">Отправить</button>
       </form>
     </div>
+    <div id="messageBox" class="messageBox">...</div>
+    <div id="overlay"></div>
     <script src="anim.js"></script>
     <script src="storage.js"></script>
+
     <script src="script.js"></script>
-    
   </body>
 </html>
