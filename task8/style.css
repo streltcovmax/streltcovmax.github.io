@@ -1,57 +1,73 @@
-body{
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #e4f3f2;
-}
-img{
-  border-radius: 12%;
-}
-.gallery{
-  width: 85%;
-  margin: 0 auto;
-  margin-top: 3%;
-}
-
-.slick-dots li button:before
-{
-  font-size: 15px;
-  color:#0b232b !important;
-}
-li.slick-active > button::before
-{
-  font-size: 20px;
-}
-.slick-dots
-{
-  bottom: -60px;
-}
-.slick-slide img{
-  margin: auto;
-  width: 270px;
-}
-.slick-prev:before,
-.slick-next:before{
-  font-size: 32px;
-  color: #0b232b;
-}
-
-@media only screen and (min-width: 610px) 
-{
-  .slick-slide img{
-    width: 170px;
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
   }
-}
-@media only screen and (min-width: 1080px) 
-{
-  .slick-slide img{
-    width: 250px;
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
   }
-}
-@media only screen and (min-width: 1500px) 
-{
-  .slick-slide img{
-    width: 400px;
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
   }
-}
-
+  
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-header .close-button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: none;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 10px 15px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 90%;
+    gap: 10px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .pairs {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .text-area {
+    resize: vertical;
+  }
