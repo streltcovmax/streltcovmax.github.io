@@ -13,14 +13,15 @@ body
 
 .text-small
 {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
-    color:rgb(201, 201, 201);
+    color:#c7c7c7;
+    margin-top: 0;
 }
 
 .text-big
 {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 1000;
     color:white;
     margin-bottom: 0;
@@ -53,7 +54,10 @@ body
 .item
 {
     width: 150px;
-    align-items: start;
+    margin-bottom: auto;
+    margin-top: auto;
+    border-left: 3px #F14D34 solid;
+    padding-left: 10px;
 }
 
 .row
@@ -61,12 +65,18 @@ body
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 2rem;
 }
 
-.column
+.block
 {
     display: flex;
     flex-direction: column;
+}
+
+.block-1
+{
+    margin-top: 2rem;
 }
 
 button
@@ -90,19 +100,45 @@ video
     filter: brightness(20%);
 }
 
+.bg-logo
+{
+    position: absolute;
+    top: -3%;
+    right: 8%;
+    width: 100%;
+}
+
 .overlay
 {
     z-index: 1;
     position: absolute;
 }
 
+
 .img-small
 {
     width: 15%;
 }
 
-.panel-1
+.mobile-menu
 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: black;
-    height: 50px;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.line {
+    display: block;
+    height: 3px;
+    width: 30px;
+    background: #818181;
+    margin-top: 4px;
+    border-radius: 6px;
+    margin-right: 10px;
 }
